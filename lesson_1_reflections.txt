@@ -1,0 +1,83 @@
+[  NAVIGATING A COMMIT HISTORY  ]
+
+
+
+[ INTRODUCTION ]
+
+*Reflection*
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+	A lot of programming involves testing and debugging. This requires a lot of going back and forth to your code to delete, edit, change, and add lines of code. Having access to your history of steps allows you to travel back in time in case you become lost and need to take a few steps back.
+
+[Version Control]
+Version control is any system that makes it easy to create, store, and access different versions of the same document, code, etc. Dropbox, Google Docs, & Git are a few examples.
+
+[Git]
+Git is a type of version control that includes a directory that continuously changes as codes are added throughout application or website development. Git also tracks revisions that are performed on stored data.
+
+Git does not auto-save, but creates commits (user-created checkpoints).
+
+[Commit]
+Commit is part of the git system that allows you to make checkpoints.	
+
+[Git Log]
+If you navigate to the directory the code is asved, you can use 'git log' in your cmd to give you a history of every commit that's ever been made. Each commit includes an ID, author, date, and message.
+
+git log --stat  # Adds statistics along with the log of your commits.
+
+[Git Difference]
+Check what changes a commit introduced with 'git diff'. Not only can it compare two files, it can compare two versions of the same file. Use the IDs of each version to complete the 'git diff' syntax.
+
+[How Often to Commit]
+A good rule of thumb is to make one commit per logical change. For example, if you fixed a typo, then fixed a bug in a separate part of the file, you should use one commit for each change since they are logically separate. If you do this, each commit will have one purpose that can be easily understood. Git allows you to write a short message explaining what was changed in each commit, and that message will be more useful if each commit has a single logical change.
+
+*Reflection*
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+	Pros: Gives you the control of when to create the checkpoints.
+	Cons: Does not provide a safety net when you forget to commit.
+
+[Repository]
+You've already seen how projects requires you to go back and forth from files. Git allows tracking across multiple files through repositories. A commit is a snapshot of every file in your repository at the time you make the commit.
+
+*Reflection*
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+	You can typically put all related information in one Google Spreadsheet or Doc. Whereas, a coding project usually requires you to create multiple files that cannot function without the other.
+
+[Clone a Repository]
+Clones a repository into a new directory.
+
+git clone [repository URL]
+
+*Reflection*
+How can you use the commands git log and git diff to view the history of files?
+
+	Git log gives you a history of every commit. You can take the commit IDs and use git diff [id1] [id2] to see what changes were made.
+
+[Errors and Warnings]
+
+"Should not be doing an octopus"
+	Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+
+"You are in 'detached HEAD' state"
+	HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+
+"Panic! (the 'impossible' happened)""
+	This is a real error message, but it’s not output by Git. Instead it’s output by GHC, the compiler for a programming language called Haskell. It’s reserved for particularly surprising errors!
+
+[Git Checkout]
+Gives you the ability to checkout an older version of your code by resetting all your files to how they were at the time the commit was made. 
+
+git checkout [commit id]
+
+*Reflection*
+How might using version control make you more confident to make changes that could break something?
+
+	You can always use checkout, log, and diff to locate where the bug is.
+
+*Reflection*
+Now that you have your workspace set up, what do you want to try using Git for?
+
+	Setting up a virtual machine.
+
