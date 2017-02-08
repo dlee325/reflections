@@ -1,0 +1,22 @@
+[ USING GITHUB TO COLLABORATE ]
+
+[Github]
+GitHub is a Git repository hosting service, but it adds many of its own features. While Git is a command line tool, GitHub provides a Web-based graphical interface. It also provides access control and several collaboration features, such as a wikis and basic task management tools for every project.
+
+The flagship functionality of GitHub is “forking” – copying a repository from one user’s account to another. This enables you to take a project that you don’t have write access to and modify it under your own account. If you make changes you’d like to share, you can send a notification called a “pull request” to the original owner. That user can then, with a click of a button, merge the changes found in your repo with the original repo. These three features – fork, pull request and merge – are what make GitHub so powerful.
+
+[Remote]
+A remote URL is Git's fancy way of saying "the place where your code is stored." That URL could be your repository on GitHub, or another user's fork, or even on a completely different server.
+
+git remote 						# View all existing remotes.
+git remote add remote_name URL 	# Adds a remote. 
+git remote -v 					# More details (eg, verify if URL added correctly).
+
+If you only have one remote, it's standard to use the remote name: 'origin'.
+
+To send your updated files to the remote, you need to push:
+
+git push remote_name branch_name# Send local updates/changes to remote.
+
+*Reflection*
+When would you want to create a remote repository rather than keeping all your work local?
