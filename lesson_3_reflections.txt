@@ -20,3 +20,37 @@ git push remote_name branch_name# Send local updates/changes to remote.
 
 *Reflection*
 When would you want to create a remote repository rather than keeping all your work local?
+  You'd want to create a remote repository rather than keeping it local when you have a project that requires collaboration. You'd also want to use it when you want to share your code with others as open source.
+
+I made this .txt file on GitHub. To sync your GitHub remote and your local repository, you need to pull:
+
+git pull remote_name branch-name# Send remote updates/changes to local.
+
+
+
+
+
+
+*Reflection*
+When would you want to use a remote repository rather than keeping all your work
+local?
+
+*Reflection*
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+*Reflection*
+Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+*Reflection*
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+*Reflection*
+How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+*Reflection*
+When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
